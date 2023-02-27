@@ -14,6 +14,12 @@ class EthereumSigner(Signer):
             self.netcode = 1
         elif ethereum_chain.external_display_value == 'ethereumRopsten':
             self.netcode = 3
+        elif ethereum_chain.external_display_value == 'ethereumGoerli':
+            self.netcode = 5
+        elif ethereum_chain.external_display_value == 'ethereumGusandbox':
+            self.netcode = 99999
+        elif ethereum_chain.external_display_value == 'ethereumJoc':
+            self.netcode = 81
         else:
             self.netcode = None
 

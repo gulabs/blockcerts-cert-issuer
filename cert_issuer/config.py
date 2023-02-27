@@ -80,6 +80,15 @@ def add_arguments(p):
     p.add_argument('--ropsten_rpc_url', default=None, type=str,
                    help='The URL of an Ethereum Ropsten RPC node - useful in the case of third-party full node vendors.',
                    env_var='ROPSTEN_RPC_URL')
+    p.add_argument('--goerli_rpc_url', default=None, type=str,
+                   help='The URL of an Ethereum Goerli RPC node - useful in the case of third-party full node vendors.',
+                   env_var='GOERLI_RPC_URL')
+    p.add_argument('--gusandbox_rpc_url', default=None, type=str,
+                   help='The URL of an Ethereum Gu sandbox RPC node - useful in the case of third-party full node vendors.',
+                   env_var='GUSANDBOX_RPC_URL')
+    p.add_argument('--joc_rpc_url', default=None, type=str,
+                   help='The URL of an Ethereum Japan Open Chain RPC node - useful in the case of third-party full node vendors.',
+                   env_var='JOC_RPC_URL')
 
     p.add_argument('--blockcypher_api_token', default=None, type=str,
                    help='the API token of the blockcypher broadcaster', env_var='BLOCKCYPHER_API_TOKEN')
